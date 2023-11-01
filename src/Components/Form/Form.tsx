@@ -5,16 +5,13 @@ import {API, TELEGRAM_CHAT_ID} from "./Api.ts";
 import {Stack} from "@mui/material";
 import LoadingButton from '@mui/lab/LoadingButton';
 import {useState} from "react";
-import toast, {Toaster} from "react-hot-toast";
+import  {Toaster} from "react-hot-toast";
+import {toastError, toasterSuccess} from "../../Helpers/Toaster/ToasterFunc.tsx";
 
 const Form = () => {
+    const date = new Date();
     const [isLoad , setIsLoad] = useState<boolean>(false)
-    function toastError (text : string) {
-        toast.error(text)
-    }
-    function toasterSuccess (text : string) {
-        toast.success(text)
-    }
+
     const formik = useFormik({
         initialValues: {
             name: "",
@@ -23,7 +20,7 @@ const Form = () => {
         },
         onSubmit: async (values) => {
             setIsLoad(true)
-            const text = `Заявка от ${values.name}!\nТелефон: ${values.phone}\nПроблема : ${values.description}`;
+            const text = `Дата : ${date} \n Заявка от ${values.name}!\nТелефон: ${values.phone}\nПроблема : ${values.description}`;
 
             try {
                 const response = await axios.post(API, {
