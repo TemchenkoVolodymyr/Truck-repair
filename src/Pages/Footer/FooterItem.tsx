@@ -3,7 +3,7 @@ export interface IFooter {
     href? : string,
 }
 function FooterItem ({text , href} : IFooter) {
-    debugger
+
     return (
         <ul>
             <a href={href}>
