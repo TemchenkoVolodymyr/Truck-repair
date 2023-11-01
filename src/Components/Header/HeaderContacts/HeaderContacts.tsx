@@ -1,7 +1,7 @@
 import style from './HeaderContacts.module.scss'
-import mapIcon from '../../../assets/map-pin.png'
-import clock from '../../../assets/clock.png'
-import mobile from '../../../assets/mobile.png'
+import mapIcon from '../../../img/icons/Vector (1).svg'
+import clock from '../../../img/icons/ant-design_clock-circle-filled.svg'
+import mobile from '../../../img/icons/clarity_phone-handset-solid.svg'
 import ContactsItem from "./ContactsItem/ContactsItem.tsx";
 
 const HeaderContacts = () => {
