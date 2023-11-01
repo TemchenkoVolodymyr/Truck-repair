@@ -1,3 +1,14 @@
 $mainBgColor: #8f1717;
 $headerHeight:50px;
 $headerBgColor: rgba(136, 136, 136, 0.23);
+$containerWidth : 87%;
+$mainColor : #333;
+$mainFamily : Inter, serif;
+$greyColor : rgba(51, 51, 51, 0.80);
+
+
+.container {
+  width: $containerWidth;
+  margin: 40px auto;
+  padding: 5px;
+}

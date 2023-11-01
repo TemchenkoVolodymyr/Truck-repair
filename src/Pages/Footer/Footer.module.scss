@@ -1,0 +1,31 @@
+.span {
+  color: #4762FF;
+}
+.block {
+  justify-content: space-around;
+  display: flex;
+  padding: 50px;
+  color: white;
+  background-color: #1A1A1A;
+}
+.title {
+  h2 {
+    margin: 10px 0;
+  }
+}
+.navList {
+  ul {
+    a {
+      cursor: pointer;
+      font-family: Inter, serif;
+      font-size: 16px;
+    }
+  }
+  line-height: 35px;
+}
+.street {
+  margin-top: 10px;
+  align-items: center;
+  display: flex;
+  gap: 5px;
+}

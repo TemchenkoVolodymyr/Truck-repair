@@ -1,0 +1,26 @@
+@import "/src/main";
+
+.title {
+  color: $mainColor;
+  text-align: center;
+  font-feature-settings: 'liga' off;
+  font-family: $mainFamily;
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.subtitle {
+  color: $greyColor;
+  text-align: center;
+  font-feature-settings: 'liga' off;
+  font-family: $mainFamily;
+  font-size: 18px;
+  font-weight: 400;
+}
+.items {
+  gap: 25px;
+  margin-top: 50px;
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(2 , 1fr);
+}

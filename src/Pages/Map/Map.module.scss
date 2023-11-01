@@ -1,0 +1,19 @@
+@import "/src/main";
+.block {
+  background-color: #F4F4F4;
+  width: 100%;
+  padding-left: 150px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 100px;
+}
+.title {
+    padding: 2rem ;
+    width: 366px;
+    margin-bottom: 15px;
+    color: $mainColor;
+    font-feature-settings: 'liga' off;
+    font-family: $mainFamily;
+    font-size: 40px;
+    font-weight: 700;
+}
