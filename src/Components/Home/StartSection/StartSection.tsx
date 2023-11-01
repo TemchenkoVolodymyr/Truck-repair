@@ -4,7 +4,7 @@ import trucks from "../../../assets/trucks.png";
 
 const StartSection = () => {
     return (
-        <div className='container'>
+        <div className={style.container}>
             <div className={style.whole}>
                 <section className={style.title}>
                     <h1>Ремонт вантажiвок </h1>

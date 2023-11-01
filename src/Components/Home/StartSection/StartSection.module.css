@@ -1,5 +1,6 @@
 .whole {
   display: flex;
+  margin-left: 25vh;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 10vh;
