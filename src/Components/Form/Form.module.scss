@@ -1,0 +1,19 @@
+.container{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  .field{
+    margin-top: 25px;
+    width: 100%;
+    input{
+      padding:20px;
+      width: 100%;
+      border-radius: 8px;
+      background: rgba(71, 98, 255, 0.08);
+      border: none;
+      outline: none;
+    }
+
+  }
+}
