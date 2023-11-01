@@ -3,7 +3,8 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  height: calc(100vh - 137px);
+  //height: calc(100vh - 137px); // временно это добавил
+  margin-bottom: 28vh;
 
   .title {
     max-width: 540px;
@@ -26,7 +27,7 @@
       font-weight: 400;
       line-height: normal;
       max-width: 456px;
-      margin: 16px 0;
+      margin: 3vh 0 10vh 0;
 
     }
   }
