@@ -65,7 +65,7 @@ const grey = {
 
 const Tab = styled(BaseTab)`
   font-family: 'IBM Plex Sans', sans-serif;
-  color: #fff;
+  color: #111111;
   cursor: pointer;
   font-size: 0.875rem;
   font-weight: 600;
