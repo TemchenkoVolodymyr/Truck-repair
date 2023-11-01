@@ -1,0 +1,16 @@
+@import "/src/main";
+
+.container{
+  position: relative;
+  header{
+    background: $headerBgColor;
+    height: $headerHeight;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+  main{
+    background: $mainBgColor;
+    height: calc(100vh);
+  }
+}
