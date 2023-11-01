@@ -4,8 +4,8 @@ import trucks from "../../../assets/trucks.png";
 
 const StartSection = () => {
     return (
-        <>
-            <div className={style.container}>
+        <div className='container'>
+            <div className={style.whole}>
                 <section className={style.title}>
                     <h1>Ремонт вантажiвок </h1>
                     <p>Наша майстерня пропонує найкращу якість обслуговування та комфорт</p>
@@ -15,7 +15,7 @@ const StartSection = () => {
                     <img src={trucks} alt={'truck'}/>
                 </section>
             </div>
-        </>
+        </div>
     );
 };
 

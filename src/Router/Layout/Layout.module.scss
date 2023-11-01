@@ -1,6 +1,9 @@
 @import "/src/main";
 
 .container{
+  width: 88%;
+  margin: 0 auto;
+  padding: 5px;
   position: relative;
   header{
     background: $headerBgColor;
@@ -9,7 +12,6 @@
     top: 0;
     width: 100%;
   }
-
   main {
     margin-top: 137px;
   }

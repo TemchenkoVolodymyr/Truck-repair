@@ -2,9 +2,6 @@ import {Route, Routes} from "react-router-dom";
 import Layout from "./Router/Layout/Layout.tsx";
 import './App.css'
 import Home from "./Components/Home/Home.tsx";
-import Services from "./Pages/Services/Services.tsx";
-import Map from "./Pages/Map/Map.tsx";
-import Footer from "./Pages/Footer/Footer.tsx";
 
 function App() {
 
@@ -15,13 +12,6 @@ function App() {
                     <Route index element={<Home/>}></Route>
                 </Route>
             </Routes>
-            <div className='container'>
-                <Services/>
-            </div>
-            <div>
-                <Map/>
-                <Footer/>
-            </div>
         </>
     )
 }

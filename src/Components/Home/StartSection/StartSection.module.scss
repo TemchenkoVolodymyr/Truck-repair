@@ -1,10 +1,9 @@
-.container {
-  margin-left: 25vh;
+.whole {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
   //height: calc(100vh - 137px); // временно это добавил
-  margin-bottom: 28vh;
+  margin-bottom: 10vh;
 
   .title {
     max-width: 540px;
