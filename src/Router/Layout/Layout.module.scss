@@ -1,16 +1,17 @@
 @import "/src/main";
 
-.container{
+.container {
   position: relative;
-  header{
-    background: $headerBgColor;
+
+  header {
+    padding: $headerPadding;
     height: $headerHeight;
     position: absolute;
     top: 0;
     width: 100%;
   }
-  main{
 
+  main {
     height: calc(100vh);
   }
 }

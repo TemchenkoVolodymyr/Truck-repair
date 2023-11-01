@@ -1,0 +1,10 @@
+@import "src/main";
+.container{
+  display: flex;
+    gap: 46px;
+    a{
+      cursor: pointer;
+      color: $mainColor;
+      font-size: $fontSize;
+  }
+}
