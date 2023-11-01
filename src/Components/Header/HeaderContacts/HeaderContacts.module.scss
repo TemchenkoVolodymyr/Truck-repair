@@ -1,0 +1,17 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  border-bottom: 1px solid rgba(150, 145, 145, 0.2);
+  padding-bottom: 5px;
+  .info{
+    max-width: 450px;
+    width: 100%;
+    justify-content: space-between;
+    display: flex;
+    span{
+      border-right: 1px solid rgba(150, 145, 145, 0.2);
+      height: 100%;
+    }
+  }
+}

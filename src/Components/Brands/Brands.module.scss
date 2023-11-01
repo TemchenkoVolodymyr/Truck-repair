@@ -1,0 +1,48 @@
+@import "src/main";
+
+.container {
+  max-width: $maxWidth;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+
+  .info {
+    h1 {
+      color: #333;
+      width: 540px;
+      font-feature-settings: 'liga' off;
+
+      font-size: 48px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      margin-bottom: 16px;
+    }
+
+    p {
+      color: rgba(51, 51, 51, 0.80);
+      width: 576px;
+      font-feature-settings: 'liga' off;
+
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 25px;
+    }
+  }
+
+  .brands {
+    width: 40%;
+
+    .blockImage {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .image {
+      text-align: center;
+    }
+  }
+}

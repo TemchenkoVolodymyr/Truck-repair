@@ -5,10 +5,13 @@ $containerWidth : 87%;
 $mainColor : #333;
 $mainFamily : Inter, serif;
 $greyColor : rgba(51, 51, 51, 0.80);
-
+$fontSize:16px;
+$maxWidth:1400px;
+$headerPadding:17px;
 
 .container {
   width: $containerWidth;
   margin: 40px auto;
   padding: 5px;
 }
+

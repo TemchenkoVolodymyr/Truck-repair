@@ -1,0 +1,22 @@
+import style from './StartSection.module.scss'
+import CustomButton from "../../../Helpers/CustomButton/CustomButton.tsx";
+import trucks from "../../../assets/trucks.png";
+
+const StartSection = () => {
+    return (
+        <>
+            <div className={style.container}>
+                <section className={style.title}>
+                    <h1>Ремонт вантажiвок </h1>
+                    <p>Наша майстерня пропонує найкращу якість обслуговування та комфорт</p>
+                    <CustomButton title={"Отримати послугу"}/>
+                </section>
+                <section className={style.image}>
+                    <img src={trucks} alt={'truck'}/>
+                </section>
+            </div>
+        </>
+    );
+};
+
+export default StartSection;
