@@ -13,7 +13,6 @@ const CustomButton = ({path = "#", title}: ICustomButtonProps) => {
             <div className={style.container}>
                 <NavLink to={path}>{title}</NavLink>
             </div>
-
         </>
     );
 };
