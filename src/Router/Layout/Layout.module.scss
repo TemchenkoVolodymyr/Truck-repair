@@ -2,16 +2,19 @@
 
 .container {
   position: relative;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
 
   header {
     padding: $headerPadding;
-    height: $headerHeight;
+    //height: $headerHeight;
     position: absolute;
     top: 0;
     width: 100%;
   }
 
   main {
-    height: calc(100vh);
+    margin-top: 137px;
   }
 }
