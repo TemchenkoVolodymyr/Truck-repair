@@ -4,19 +4,15 @@ import location from  './../../img/icons/ic_round-pin-drop.svg'
 const homeList: IFooter[] = [
     {
         text: 'О нас',
-        href: '#'
+        href: '#about'
     },
     {
         text: 'Кто мы?',
-        href: '#'
+        href: '#brand'
     },
     {
         text: 'Почему мы?',
-        href: '#'
-    },
-    {
-        text: 'Остались вопросы?',
-        href: '#'
+        href: '#brand'
     },
     {
         text: 'Контакты',
@@ -24,8 +20,7 @@ const homeList: IFooter[] = [
     },
 ]
 const contactsList : IFooter[] = [
-    {text : '+380 77 000 77 77' , href : '#'},
-    {text : '+380 66 666 66 66' , href : '#'}
+    {text : '+38 067 1350458' , href : '#'},
 ]
 
 function Footer() {
@@ -52,7 +47,7 @@ function Footer() {
                     </li>
                     <div className={style.street}>
                     <img src={location} alt="location"/>
-                        <p>Ул. Новосельского 4</p>
+                        <a href={'#map'}>м. Черкаси, вул. Гетьмана Сагайдачного, 84/1</a>
                     </div>
                 </div>
             </div>
