@@ -8,14 +8,14 @@ const HeaderContacts = () => {
     return (
         <div className={style.container}>
             <section className={style.info}>
-                <ContactsItem title={"Наша адресса :"} description={"г.Черкассы, вул. Шевченка"}
+                <ContactsItem title={"Наша адресса :"} description={"м. Черкаси, вул. Гетьмана Сагайдачного 84/1 (територія Черкаська мехколона)"}
                               image={mapIcon}></ContactsItem>
                 <span></span>
-                <ContactsItem title={"Коли працюємо"} description={"З 8:00 до 20:00 ПН-ПТ"}
+                <ContactsItem title={"Коли працюємо"} description={"З 8:00 до 19:00 ПН-ПТ/ 8:00 до 17:00 Сб"}
                               image={clock}></ContactsItem>
             </section>
 
-            <ContactsItem title={"+7(099)999331"} description={"+7(099)999331"} image={mobile}></ContactsItem>
+            <ContactsItem title={"+38067-135-04-58"} description={"+38067-135-04-58"} image={mobile}></ContactsItem>
         </div>
     );
 };
