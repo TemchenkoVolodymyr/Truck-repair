@@ -1,7 +1,10 @@
 
-import place from '../../../assets/slider/slider-1.jpg'
-import place2 from '../../../assets/slider/slider-2.jpg'
-import place3 from '../../../assets/slider/slider-3.jpg'
+import itemOne from '../../../assets/slider/ДП.png'
+import itemTwo from '../../../assets/slider/env.png'
+import itemThree from '../../../assets/slider/down.png'
+import itemFour from '../../../assets/slider/under.png'
+import ItemFive from '../../../assets/slider/cars.png'
+import itemSix from '../../../assets/slider/trucks.png'
 import {Carousel} from "antd";
 
 import style from './SliderItems.module.scss'
@@ -25,7 +28,7 @@ import style from './SliderItems.module.scss'
 
 const SliderItems = () => {
 
-    const environment: string[] = [place, place2, place3]
+    const environment: string[] = [itemOne, itemTwo, itemThree,itemFour,ItemFive,itemSix]
     return (
         <>
             <div className={style.container}>
