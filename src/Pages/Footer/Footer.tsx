@@ -16,7 +16,7 @@ const homeList: IFooter[] = [
     },
     {
         text: 'Контакты',
-        href: '#'
+        href: '#contacts'
     },
 ]
 const contactsList : IFooter[] = [
@@ -26,7 +26,7 @@ const contactsList : IFooter[] = [
 function Footer() {
     return (
         <>
-            <div className={style.block}>
+            <div id={'contacts'} className={style.block}>
                 <div className={style.logo}>
                     <h2>Homenky <span className={style.span}>Truck</span></h2>
                 </div>
