@@ -13,7 +13,7 @@ const Home = () => {
         <article className={style.container}>
             <StartSection></StartSection>
             <Services/>
-            <Brands></Brands>
+            <Brands></Brands>g
             <Slider></Slider>
             <Map/>
             <ContactUs></ContactUs>

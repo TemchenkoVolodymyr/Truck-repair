@@ -11,7 +11,10 @@ const NavItems = () => {
     const items: IItem[] = [{
         title: "Послуги",
         path: "#"
-    }, {
+    },  {
+        title:'Цiни',
+        path:'#'
+    },{
         title: "Помiщення",
         path: "#"
     }, {
