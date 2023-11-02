@@ -86,7 +86,7 @@ const Form = () => {
                     <button className={style.wrapperBtn}>
                         <Stack direction="row" spacing={2}>
                             <LoadingButton loading={isLoad}  variant="outlined">
-                                Submit
+                                Записатись
                             </LoadingButton>
                         </Stack>
                     </button>

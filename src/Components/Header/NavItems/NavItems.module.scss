@@ -1,10 +1,14 @@
 @import "src/main";
-.container{
+
+.container {
   display: flex;
-    gap: 46px;
-    a{
-      cursor: pointer;
-      color: $mainColor;
-      font-size: $fontSize;
+  gap: 46px;
+  width: 300px;
+  margin: 15px 0;
+
+  a {
+    cursor: pointer;
+    color: $mainColor;
+    font-size: $fontSize;
   }
 }

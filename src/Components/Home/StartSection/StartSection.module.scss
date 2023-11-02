@@ -1,10 +1,13 @@
+.container{
+  //margin-bottom: 19vh;
+  height: calc(100vh - 100px);
+  position: relative;
+}
 .whole {
   display: flex;
   margin-left: 25vh;
   justify-content: space-between;
   align-items: center;
-  //height: calc(100vh - 137px); // временно это добавил
-  margin-bottom: 10vh;
 
   .title {
     max-width: 540px;
@@ -31,4 +34,11 @@
 
     }
   }
+
+}
+.questionWrapper{
+  position: fixed;
+  z-index: 2;
+  bottom: 0;
+  right: 10px;
 }

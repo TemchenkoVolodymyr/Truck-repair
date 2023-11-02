@@ -17,4 +17,21 @@
   outline: none;
 }
 
+.textArea {
+  height: 100px;
+  padding: 20px;
+  width: 100%;
+  border-radius: 8px;
+  background: rgba(71, 98, 255, 0.08);
+  border: none;
+  outline: none;
+  resize: none;
+}
+
+.wrapperBtn {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
 /*# sourceMappingURL=Form.module.css.map */
