@@ -21,10 +21,37 @@
   font-size: 18px;
   font-weight: 400;
 }
+.block {
+  position: relative;
+  height: 450px;
+  padding: 45px;
+  border-radius: 10px;
+  border: 1px solid #4762FF;
+  margin-top: 50px;
+}
+
 .items {
   gap: 25px;
-  margin-top: 50px;
-  display: grid;
-  justify-items: center;
-  grid-template-columns: repeat(2 , 1fr);
+  display: flex;
 }
+
+.btn {
+  right: 30px;
+  bottom: 20px;
+  position: absolute;
+  cursor: pointer;
+  transition: .4s ease;
+  gap: 10px;
+  align-items: center;
+  display: flex;
+  padding: 10px 25px;
+  color: white;
+  border-radius: 10px;
+  border: none;
+  background-color:#4762FF;
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+

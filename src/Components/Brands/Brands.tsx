@@ -7,7 +7,7 @@ import volvo from '../../assets/volvo.png'
 
 const Brands = () => {
     return (
-        <section className={style.container}>
+        <section id={'brand'} className={style.container}>
             <div className={style.info}>
                 <h1>С якими брендами мы працюэмо</h1>
                 <p>Ми працюємо з найпопулярнішими брендами, такими як SCANIA, VOLVO, MAN, RENAULT, DAF та багатьма

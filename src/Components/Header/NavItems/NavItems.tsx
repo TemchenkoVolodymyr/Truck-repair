@@ -10,22 +10,19 @@ const NavItems = () => {
 
     const items: IItem[] = [{
         title: "Послуги",
-        path: "#"
-    },  {
-        title:'Цiни',
-        path:'#'
+        path: "#services"
     },{
         title: "Помiщення",
-        path: "#"
+        path: "#place"
     }, {
         title: "Контакти",
-        path: "#"
+        path: "#contacts"
     },]
 
     return (
         <div className={style.container}>
 
-                {items.map((item, index: number) => <Link to={item.path} key={index}>{item.title}</Link>)}
+                {items.map((item, index: number) => <a href={item.path} key={index}>{item.title}</a>)}
 
         </div>
     );

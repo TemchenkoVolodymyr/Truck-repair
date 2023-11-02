@@ -6,12 +6,12 @@ import ChatQuestion from "./ChatQuestion/ChatQuestion.tsx";
 const StartSection = () => {
 
     return (
-        <div className={style.container}>
+        <div id={'about'} className={style.container}>
             <div className={style.whole}>
                 <section className={style.title}>
                     <h1>Ремонт вантажiвок </h1>
                     <p>Наша майстерня пропонує найкращу якість обслуговування та комфорт</p>
-                    <CustomButton title={"Отримати послугу"}/>
+                    <CustomButton  path={'#form'} title={"Отримати послугу"}/>
                 </section>
                 <section className={style.image}>
                     <img src={trucks} alt={'truck'}/>

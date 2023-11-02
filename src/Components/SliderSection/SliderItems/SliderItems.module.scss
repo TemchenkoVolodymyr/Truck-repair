@@ -22,3 +22,11 @@
     rotate: 180deg;
   }
 }
+.wrapper{
+  img{
+   width: 100%;
+    border-radius: 5px;
+    height: 500px;
+    object-fit: cover;
+  }
+}

@@ -28,6 +28,7 @@
     "react-router-dom": "^6.18.0",
     "react-scroll": "^1.8.9",
     "sass": "^1.68.0",
+    "styled-components": "^6.1.0",
     "yarn": "^1.22.19"
   },
   "devDependencies": {

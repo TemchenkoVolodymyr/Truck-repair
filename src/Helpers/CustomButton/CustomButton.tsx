@@ -1,4 +1,4 @@
-import {NavLink} from "react-router-dom";
+// import {NavLink} from "react-router-dom";
 import style from './CustomButton.module.scss'
 
 
@@ -10,9 +10,10 @@ interface ICustomButtonProps {
 const CustomButton = ({path = "#", title}: ICustomButtonProps) => {
     return (
         <>
-
-                <NavLink className={style.container} to={path}>{title}</NavLink>
-
+            <div className={style.container}>
+                {/* <NavLink to={path}>{title}</NavLink>*/}
+                <a href={path}>{title}</a>
+            </div>
         </>
     );
 };
