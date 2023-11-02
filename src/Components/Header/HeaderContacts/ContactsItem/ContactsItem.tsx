@@ -1,19 +1,25 @@
 import style from './ContactsItems.module.scss'
 
 interface IContactsItemProps {
-    image: string,
+    image?: string,
     title: string,
-    description: string
+    description?: string,
+    path?:string,
+    tel?:boolean
 }
 
-const ContactsItem = ({image, title, description}: IContactsItemProps) => {
+const ContactsItem = ({image, title, description,path,tel}: IContactsItemProps) => {
     return (
         <section className={style.container}>
             <img src={image} alt={'map'}/>
-            <ul>
+            {tel ? <a className={style.tel} href={path} target="_blank" rel="noopener noreferrer">
+                {title}
+            </a> :   <ul>
                 <li>{title}</li>
                 <li className={style.item}>{description}</li>
-            </ul>
+            </ul>}
+
+
         </section>
     );
 };

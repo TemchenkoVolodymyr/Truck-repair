@@ -15,7 +15,7 @@ const HeaderContacts = () => {
                               image={clock}></ContactsItem>
             </section>
 
-            <ContactsItem title={"+38067-135-04-58"} description={"+38067-135-04-58"} image={mobile}></ContactsItem>
+            <ContactsItem path={"https://t.me/HomenkyTruckServer"} tel={true} title={"+38067-135-04-58"} description={"+38067-135-04-58"} image={mobile}></ContactsItem>
         </div>
     );
 };
