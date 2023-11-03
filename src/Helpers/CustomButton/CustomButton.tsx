@@ -10,10 +10,12 @@ interface ICustomButtonProps {
 const CustomButton = ({path = "#", title}: ICustomButtonProps) => {
     return (
         <>
-            <div className={style.container}>
+            <a href={path}>
+            <div  className={style.container}>
                 {/* <NavLink to={path}>{title}</NavLink>*/}
-                <a href={path}>{title}</a>
+                <h4 className={style.titleBtn}>{title}</h4>
             </div>
+            </a>
         </>
     );
 };
