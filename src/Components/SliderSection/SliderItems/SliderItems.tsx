@@ -8,24 +8,6 @@ import itemSix from '../../../assets/slider/trucks.png'
 import {Carousel} from "antd";
 
 import style from './SliderItems.module.scss'
-// import {styled} from "styled-components";
-
-
-// const StyledCarousel = styled(Carousel)`
-//   .slick-dots li button {
-//     width: 10px;
-//     height: 10px;
-//     border-radius: 100%;
-//   }
-//
-//   .slick-dots li.slick-active button {
-//     width: 10px;
-//     height: 10px;
-//     border-radius: 100%;
-//     background: red;
-//   }
-// `;
-
 const SliderItems = () => {
 
     const environment: string[] = [itemOne, itemTwo, itemThree,itemFour,ItemFive,itemSix]

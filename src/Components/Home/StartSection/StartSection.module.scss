@@ -1,8 +1,9 @@
-.container{
-  //margin-bottom: 19vh;
-  height: calc(100vh - 100px);
+.container {
+  //margin-bottom: 110px;
+  height: calc(100vh - 110px);
   position: relative;
 }
+
 .whole {
   display: flex;
   margin-left: 25vh;
@@ -20,7 +21,7 @@
       font-style: normal;
       font-weight: 700;
       line-height: 76px; /* 126.667% */
-      span{
+      span {
         color: #4762FF;
       }
     }
@@ -34,7 +35,8 @@
       line-height: 30px;
       max-width: 456px;
       margin: 3vh 0 10vh 0;
-      span{
+
+      span {
         color: #4762FF;
         font-weight: bold;
       }
@@ -43,9 +45,22 @@
   }
 
 }
-.questionWrapper{
+
+.questionWrapper {
   position: fixed;
   z-index: 2;
   bottom: 0;
   right: 10px;
+}
+
+.logo {
+  position: absolute;
+  top: 30%;
+  left: -180px;
+
+  h2 {
+    rotate: -90deg;
+    font-size: 100px;
+
+  }
 }

@@ -21,6 +21,7 @@ const StartSection = () => {
                 <ChatQuestion></ChatQuestion>
             </div>
 
+
         </div>
     );
 };

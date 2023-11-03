@@ -1,5 +1,5 @@
 .container {
-  height: calc(100vh - 100px);
+  height: calc(100vh - 110px);
   position: relative;
 }
 
@@ -44,6 +44,16 @@
   z-index: 2;
   bottom: 0;
   right: 10px;
+}
+
+.logo {
+  position: absolute;
+  top: 30%;
+  left: -180px;
+}
+.logo h2 {
+  rotate: -90deg;
+  font-size: 100px;
 }
 
 /*# sourceMappingURL=StartSection.module.css.map */
