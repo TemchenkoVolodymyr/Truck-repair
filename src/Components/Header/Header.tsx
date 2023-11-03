@@ -8,7 +8,6 @@ const Header = () => {
             <nav className={style.nav}>
                 <Logo></Logo>
                 <NavItems></NavItems>
-
             </nav>
 
         </div>
