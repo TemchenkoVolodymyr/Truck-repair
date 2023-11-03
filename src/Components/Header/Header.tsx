@@ -4,7 +4,7 @@ import Logo from "./Logo/Logo.tsx";
 
 const Header = () => {
     return (
-        <div className={style.container}>
+        <div className={style.container} id={'header'}>
             <nav className={style.nav}>
                 <Logo></Logo>
                 <NavItems></NavItems>
