@@ -1,6 +1,5 @@
 .container {
-  color: #ffffff;
-  padding: 11px 18px 11px 19px;
+  max-width: 15rem;
   align-items: center;
   border-radius: 8px;
   background: #4762FF;
@@ -9,6 +8,10 @@
   font-size: 18px;
   font-style: normal;
   line-height: 30px;
+}
+.container .titleBtn {
+  padding: 11px 5px 11px 19px;
+  color: #ffffff !important;
 }
 
 /*# sourceMappingURL=CustomButton.module.css.map */

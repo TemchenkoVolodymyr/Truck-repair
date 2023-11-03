@@ -4,9 +4,6 @@ import ExampleNavigationMenu from "./ServiceItemsModal/ServiceItemsModal.tsx";
 
 
 const NavItems = () => {
-
-
-
     return (
         <div className={style.container}>
             <ExampleNavigationMenu></ExampleNavigationMenu>
