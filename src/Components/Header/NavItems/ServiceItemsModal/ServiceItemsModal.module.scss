@@ -1,0 +1,14 @@
+.items{
+  ul{
+    display: flex;
+    flex-direction: row;
+  }
+}
+.contactItem{
+  display: flex;
+  align-items: center;
+  svg{
+    font-size: 25px;
+    margin-right: 5px;
+  }
+}
