@@ -3,7 +3,7 @@ import {IServices} from "../Components/Header/NavItems/ServiceItemsModal/Service
 
 export const getServices = async (callback:(arg:IServices[]) => void) => {
    try{
-      const response = await axios.get(`http://localhost:3000/services`)
+      const response = await axios.get(`http://localhost:3000/Services`)
 
       if(response.status === 200) {
 
