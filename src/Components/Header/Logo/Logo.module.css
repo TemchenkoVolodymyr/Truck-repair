@@ -1,5 +1,16 @@
+.container {
+  display: flex;
+  align-items: center;
+}
+.container h2 {
+  font-size: 30px;
+}
 .container h2 span {
   color: #4762FF;
+}
+
+.link {
+  color: #1A1A1A !important;
 }
 
 /*# sourceMappingURL=Logo.module.css.map */

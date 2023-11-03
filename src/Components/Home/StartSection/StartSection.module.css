@@ -21,15 +21,22 @@
   font-weight: 700;
   line-height: 76px; /* 126.667% */
 }
+.whole .title h1 span {
+  color: #4762FF;
+}
 .whole .title p {
   color: rgba(51, 51, 51, 0.8);
   font-feature-settings: "liga" off;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
-  line-height: normal;
+  line-height: 30px;
   max-width: 456px;
   margin: 3vh 0 10vh 0;
+}
+.whole .title p span {
+  color: #4762FF;
+  font-weight: bold;
 }
 
 .questionWrapper {

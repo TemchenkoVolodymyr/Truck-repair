@@ -20,6 +20,9 @@
       font-style: normal;
       font-weight: 700;
       line-height: 76px; /* 126.667% */
+      span{
+        color: #4762FF;
+      }
     }
 
     p {
@@ -28,9 +31,13 @@
       font-size: 18px;
       font-style: normal;
       font-weight: 400;
-      line-height: normal;
+      line-height: 30px;
       max-width: 456px;
       margin: 3vh 0 10vh 0;
+      span{
+        color: #4762FF;
+        font-weight: bold;
+      }
 
     }
   }
