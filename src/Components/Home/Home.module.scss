@@ -1,5 +1,29 @@
 
 .container {
+  position: relative;
 
+  .moveUp {
+    position: fixed;
+    bottom: 15vh;
+    //left: 5px;
+    right: 35px;
+    z-index: 1;
 
+    svg {
+      color: #4762FF;
+      background: rgba(0, 0, 0, 0);
+      padding: 5px;
+      font-size: 50px;
+      border-radius: 5px;
+      border: 1px solid #4762FF;
+      //box-shadow: #1A1A1A;
+      transition: 0.3s ease-in-out;
+      cursor: pointer;
+      box-shadow: rgba(30, 93, 210, 0.23) 0px 7px 29px 0px;
+
+      &:hover {
+        transform: scale(0.9);
+      }
+    }
+  }
 }

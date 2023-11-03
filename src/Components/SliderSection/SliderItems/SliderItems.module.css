@@ -22,6 +22,11 @@
   rotate: 180deg;
 }
 
+.wrapper {
+  background: #4762FF;
+  padding: 10px 10px 0 0;
+  border-radius: 20px;
+}
 .wrapper img {
   width: 100%;
   border-radius: 5px;
