@@ -7,13 +7,25 @@
   justify-content: space-between;
   margin-bottom: 100px;
 }
+.titleBlock {
+  padding: 2rem ;
+}
 .title {
-    padding: 2rem ;
     width: 366px;
-    margin-bottom: 15px;
+    margin-bottom: 35px;
     color: $mainColor;
     font-feature-settings: 'liga' off;
     font-family: $mainFamily;
     font-size: 40px;
     font-weight: 700;
+}
+.openingTimes {
+  margin-top: 51px;
+  color: $mainColor;
+  font-size: 20px;
+}
+.currentDay {
+  margin: 7px 5px;
+  width: 10.5rem;
+  border-bottom: 2px solid #4762FF; ;
 }

@@ -9,7 +9,6 @@ export function ServicesTablePage() {
 
     useEffect(() => {
         getServices(setServices)
-        console.log(services)
     }, [])
 
     return (
