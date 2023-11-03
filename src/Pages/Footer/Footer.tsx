@@ -28,7 +28,7 @@ function Footer() {
         <>
             <div id={'contacts'} className={style.block}>
                 <div className={style.logo}>
-                    <h2>Homenky <span className={style.span}>Truck</span></h2>
+                    <h2>Homa<span className={style.span}>Service</span></h2>
                 </div>
                 <div className={style.nav}>
                     <b className={style.title}><h2>Главная</h2></b>
