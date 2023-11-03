@@ -3,7 +3,7 @@ import {IServices} from "../Components/Header/NavItems/ServiceItemsModal/Service
 
 export const getServices = async (callback:(arg:IServices[]) => void) => {
    try{
-      const response = await axios.get(`http://localhost:3000/Services`)
+      const response = await axios.get(`https://truck-server-blond.vercel.app/Services`)
 
       if(response.status === 200) {
 

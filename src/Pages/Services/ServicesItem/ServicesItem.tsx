@@ -9,7 +9,7 @@ function ServicesItem ({title, photo} : IServicesItem) {
             <div className={style.textBlock}>
             <p className={style.title}>{title}</p>
             </div>
-            <img className={style.photo} src={photo} alt="photo"/>
+            <img   className={style.photo} src={photo} alt="photo"/>
         </div>
     )
 }
