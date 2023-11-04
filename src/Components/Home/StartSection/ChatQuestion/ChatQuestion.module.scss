@@ -19,9 +19,13 @@
   justify-content: space-between;
   header{
     border-radius: 5px;
+    margin: 0 auto;
     h3{
       text-align: center;
       color: white;
+      display: flex;
+      align-items: center;
+      gap:5px;
       span{
         color: #1e5dd2;
       }
@@ -36,7 +40,7 @@
       line-height: 20px;
       background: #4762FF;
       padding: 30px 15px ;
-      border-radius: 5px 5px 5px 50px;
+      border-radius: 5px;
 
     }
   }
@@ -71,6 +75,16 @@
       padding: 10px;
       outline: none;
       font-size: 14px;
+      &::placeholder{
+        font-size: 14px;
+      }
+    }
+    textarea{
+      max-width: 100%;
+      max-height: 80px;
+      min-height: 60px;
+      font-size: 14px;
+      outline: none;
       &::placeholder{
         font-size: 14px;
       }

@@ -1,6 +1,7 @@
 .container{
   display: flex;
   align-items: center;
+  position: relative;
   h2{
     font-size: 30px;
     span{
@@ -10,6 +11,12 @@
   svg{
     margin: 0 5px;
   }
+  .logo{
+    img{
+      //max-width: 250px;
+    }
+  }
+
 }
 .letter{
 
@@ -17,5 +24,6 @@
 }
 .link{
   color: #1A1A1A !important;
+  position: relative;
 
 }

@@ -2,16 +2,16 @@ import style from './Map.module.scss';
 
 function Map() {
     const day : number = new Date().getDay();
-    const daysOfWeek: string[] = [ 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday' , 'Sunday'];
+    const daysOfWeek: string[] = [ 'Понеділок', 'Вівторок', 'Середа', 'Четвер', 'П\'ятниця', 'Субота' , 'Неділя'];
 
     const openingTimes : string[] = [
-        '8 am–7 pm',
-        '8 am–7 pm',
-        '8 am–7 pm',
-        '8 am–7 pm',
-        '8 am–7 pm',
-        '8 am–5 pm',
-        'Closed',
+        '8 00 – 19 00',
+        '8 00 – 19 00',
+        '8 00 – 19 00',
+        '8 00 – 19 00',
+        '8 00 – 19 00',
+        '8 00 – 17 00',
+        '- Зачиненно',
     ];
 
     return (

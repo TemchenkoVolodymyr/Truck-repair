@@ -20,10 +20,14 @@
 }
 .modal header {
   border-radius: 5px;
+  margin: 0 auto;
 }
 .modal header h3 {
   text-align: center;
   color: white;
+  display: flex;
+  align-items: center;
+  gap: 5px;
 }
 .modal header h3 span {
   color: #1e5dd2;
@@ -38,7 +42,7 @@
   line-height: 20px;
   background: #4762FF;
   padding: 30px 15px;
-  border-radius: 5px 5px 5px 50px;
+  border-radius: 5px;
 }
 .modal .textarea {
   bottom: 15px;
@@ -73,6 +77,16 @@
   font-size: 14px;
 }
 .modal .contact input::placeholder {
+  font-size: 14px;
+}
+.modal .contact textarea {
+  max-width: 100%;
+  max-height: 80px;
+  min-height: 60px;
+  font-size: 14px;
+  outline: none;
+}
+.modal .contact textarea::placeholder {
   font-size: 14px;
 }
 

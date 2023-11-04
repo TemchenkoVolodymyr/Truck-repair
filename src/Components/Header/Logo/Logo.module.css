@@ -1,6 +1,7 @@
 .container {
   display: flex;
   align-items: center;
+  position: relative;
 }
 .container h2 {
   font-size: 30px;
@@ -11,9 +12,9 @@
 .container svg {
   margin: 0 5px;
 }
-
 .link {
   color: #1A1A1A !important;
+  position: relative;
 }
 
 /*# sourceMappingURL=Logo.module.css.map */
