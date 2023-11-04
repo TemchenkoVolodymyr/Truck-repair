@@ -89,5 +89,10 @@
 .modal .contact textarea::placeholder {
   font-size: 14px;
 }
+.modal .wrapperButton {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
 
 /*# sourceMappingURL=ChatQuestion.module.css.map */

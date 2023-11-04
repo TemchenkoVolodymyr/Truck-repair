@@ -14,13 +14,14 @@ import HomeRounded from '@mui/icons-material/HomeRounded';
 import KeyboardArrowDown from '@mui/icons-material/KeyboardArrowDown';
 import style from './ServiceItemsModal.module.scss'
 import Items from "../Items/Items.tsx";
-import {useEffect} from "react";
+import {Dispatch, SetStateAction, useEffect} from "react";
 import {getServices} from '../../../../Requests/GetServices.ts'
 import {NavLink} from 'react-router-dom'
 import {RiWhatsappFill} from "react-icons/ri";
 import {BsTelegram} from "react-icons/bs";
 import {FaMapMarked} from "react-icons/fa";
 import {Link} from "react-scroll";
+import {IHeaderProps} from "../../Header.tsx";
 
 type Options = {
     initialActiveIndex: null | number;
@@ -208,11 +209,12 @@ type AdmissionsMenuProps = {
     focusPrevious: () => void;
     onMouseEnter?: (event?: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => void;
     onKeyDown?: (event: React.KeyboardEvent<HTMLAnchorElement>) => void;
+    setOpen:Dispatch<SetStateAction<boolean>>,
 };
 
 const AdmissionsMenu = React.forwardRef(
     (
-        {focusNext, focusPrevious, ...props}: AdmissionsMenuProps,
+        {focusNext, focusPrevious,setOpen, ...props}: AdmissionsMenuProps,
         ref: React.ForwardedRef<HTMLAnchorElement>,
     ) => {
         const [anchorEl, setAnchorEl] = React.useState<HTMLAnchorElement | null>(null);
@@ -292,11 +294,11 @@ const AdmissionsMenu = React.forwardRef(
                         >
                             <ListItem role="none">
                                 <ListItemButton role="menuitem" {...getTargetProps(0)}>
-                                    <ListItemContent> <Link to={'form'} target="_blank" rel="noopener noreferrer">Задати
+                                    <ListItemContent> <Link onClick={() => setOpen(true)} to={'/'} target="_blank" rel="noopener noreferrer">Задати
                                         питання</Link></ListItemContent>
 
                                     <Chip size="sm" variant="soft" color="danger">
-                                        Протягом 15 хвилин
+                                        Протягом 1 години
                                     </Chip>
                                 </ListItemButton>
                             </ListItem>
@@ -334,7 +336,7 @@ const AdmissionsMenu = React.forwardRef(
     },
 );
 
-export default function ExampleNavigationMenu() {
+export default function ExampleNavigationMenu({setOpen} : IHeaderProps) {
     const {targets, getTargetProps, setActiveIndex, focusNext, focusPrevious} =
         useRovingIndex();
     const [services, setServices] = React.useState<IServices[] | []>([])
@@ -389,6 +391,7 @@ export default function ExampleNavigationMenu() {
                         }}
                         focusNext={focusNext}
                         focusPrevious={focusPrevious}
+                        setOpen={setOpen}
                         {...getTargetProps(2)}
                     />
                 </ListItem>

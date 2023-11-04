@@ -1,12 +1,13 @@
 import style from './NavItems.module.scss'
 import ExampleNavigationMenu from "./ServiceItemsModal/ServiceItemsModal.tsx";
+import {IHeaderProps} from "../Header.tsx";
 
 
 
-const NavItems = () => {
+const NavItems = ({setOpen}:IHeaderProps) => {
     return (
         <div className={style.container}>
-            <ExampleNavigationMenu></ExampleNavigationMenu>
+            <ExampleNavigationMenu setOpen={setOpen}></ExampleNavigationMenu>
         </div>
     );
 };

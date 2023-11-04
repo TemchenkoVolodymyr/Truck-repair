@@ -1,7 +1,7 @@
 import style from './StartSection.module.scss'
 import CustomButton from "../../../Helpers/CustomButton/CustomButton.tsx";
 import trucks from "../../../assets/trucks.png";
-import ChatQuestion from "./ChatQuestion/ChatQuestion.tsx";
+
 
 const StartSection = () => {
 
@@ -17,9 +17,7 @@ const StartSection = () => {
                     <img src={trucks} alt={'truck'}/>
                 </section>
             </div>
-            <div className={style.questionWrapper}>
-                <ChatQuestion></ChatQuestion>
-            </div>
+
 
 
         </div>
