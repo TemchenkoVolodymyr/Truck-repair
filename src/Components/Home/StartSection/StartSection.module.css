@@ -1,59 +1,17 @@
-.container {
-  height: calc(100vh - 110px);
-  position: relative;
-}
+/* Error: Can't find stylesheet to import.
+ *   ,
+ * 1 | @import "src/main";
+ *   |         ^^^^^^^^^^
+ *   '
+ *   StartSection.module.scss 1:9  root stylesheet */
 
-.whole {
-  display: flex;
-  margin-left: 25vh;
-  justify-content: space-between;
-  align-items: center;
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Can't find stylesheet to import.\a   \2577 \a 1 \2502  @import \"src/main\";\d\a   \2502          ^^^^^^^^^^\a   \2575 \a   StartSection.module.scss 1:9  root stylesheet";
 }
-.whole .title {
-  max-width: 540px;
-  margin-top: 169px;
-}
-.whole .title h1 {
-  color: #333;
-  font-feature-settings: "liga" off;
-  font-size: 60px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 76px; /* 126.667% */
-}
-.whole .title h1 span {
-  color: #4762FF;
-}
-.whole .title p {
-  color: rgba(51, 51, 51, 0.8);
-  font-feature-settings: "liga" off;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 30px;
-  max-width: 456px;
-  margin: 3vh 0 10vh 0;
-}
-.whole .title p span {
-  color: #4762FF;
-  font-weight: bold;
-}
-
-.questionWrapper {
-  position: fixed;
-  z-index: 2;
-  bottom: 0;
-  right: 10px;
-}
-
-.logo {
-  position: absolute;
-  top: 30%;
-  left: -180px;
-}
-.logo h2 {
-  rotate: -90deg;
-  font-size: 100px;
-}
-
-/*# sourceMappingURL=StartSection.module.css.map */
