@@ -9,8 +9,8 @@ function Services () {
     return (
         <div id={'services'} className={style.whole}>
             <div className='container'>
-            <h2 className={style.title}>Наши услуги :</h2>
-                <p className={style.subtitle}>Вы сможете посетить наше СТО и сделать</p>
+            <h2 className={style.title}>Наші послуги :</h2>
+                <p className={style.subtitle}>У нас ви зможете отримати наступні послуги</p>
                 <div className={style.block}>
                     <div className={style.wrapperBlock}>
                         <div className={style.items}>
@@ -19,7 +19,7 @@ function Services () {
                             })}
                         </div>
                         <Link to={'/services'} className={style.btn}>
-                            Подивитись все
+                            Переглянути всі послуги
                             <BsArrowRightShort size={'40px'}/>
                         </Link>
                     </div>

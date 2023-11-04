@@ -1,21 +1,22 @@
 import style from './Footer.module.scss'
 import FooterItem, {IFooter} from "./FooterItem.tsx";
 import location from  './../../img/icons/ic_round-pin-drop.svg'
+import Logo from "../../Components/Header/Logo/Logo.tsx";
 const homeList: IFooter[] = [
     {
-        text: 'О нас',
+        text: 'Майстерня',
         href: '#about'
     },
     {
-        text: 'Кто мы?',
+        text: 'З чим працюємо?',
         href: '#brand'
     },
     {
-        text: 'Почему мы?',
-        href: '#brand'
+        text: 'Послуги?',
+        href: '#services'
     },
     {
-        text: 'Контакты',
+        text: 'Контакти',
         href: '#contacts'
     },
 ]
@@ -28,10 +29,11 @@ function Footer() {
         <>
             <div id={'contacts'} className={style.block}>
                 <div className={style.logo}>
-                    <h2>Homa<span className={style.span}>Service</span></h2>
+                    <Logo></Logo>
+                    {/*<h2>Homa<span className={style.span}>Service</span></h2>*/}
                 </div>
                 <div className={style.nav}>
-                    <b className={style.title}><h2>Главная</h2></b>
+                    <b className={style.title}><h2>Головна</h2></b>
                     <li className={style.navList}>
                         {homeList.map((item: IFooter) => {
                             return <FooterItem text={item.text} href={item.href}/>
@@ -39,7 +41,7 @@ function Footer() {
                     </li>
                 </div>
                 <div className={style.contact}>
-                    <b className={style.title}><h2>Контакты</h2></b>
+                    <b className={style.title}><h2>Контакти</h2></b>
                     <li className={style.contactsList}>
                         {contactsList.map((item: IFooter) => {
                             return <FooterItem text={item.text} href={item.href}/>
