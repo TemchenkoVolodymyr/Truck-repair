@@ -29,6 +29,7 @@
     "react-router": "^6.18.0",
     "react-router-dom": "^6.18.0",
     "react-scroll": "^1.9.0",
+    "react-spring": "^9.7.3",
     "sass": "^1.68.0",
     "styled-components": "^6.1.0",
     "yarn": "^1.22.19"
