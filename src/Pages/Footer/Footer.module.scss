@@ -36,6 +36,14 @@
 }
 
 @media screen and (max-width: 700px) {
+  .contact{
+    width: 50%;
+  }
+  .street{
+    a{
+      font-size: 13px;
+    }
+  }
   .logo {
     display: none;
   }
@@ -47,5 +55,28 @@
   }
   .nav {
     width: 50%;
+  }
+  .title{
+    h2{
+      font-size: 15px;
+    }
+  }
+  .navList {
+    ul {
+      a {
+        cursor: pointer;
+        font-family: Inter, serif;
+        font-size: 13px;
+      }
+    }
+
+    line-height: 35px;
+  }
+  .contactsList{
+    ul{
+      a{
+        font-size: 13px;
+      }
+    }
   }
 }

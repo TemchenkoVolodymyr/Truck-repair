@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   position: relative;
-
+//z-index: 3;
   .logo {
     img {
 
@@ -19,6 +19,7 @@
 
 @media screen and (max-width: 700px) {
   .logo {
+
     img {
       max-width: 150px;
     }

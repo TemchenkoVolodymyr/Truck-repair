@@ -1,15 +1,22 @@
 import style from './StartSection.module.scss'
 import CustomButton from "../../../Helpers/CustomButton/CustomButton.tsx";
 import trucks from "../../../assets/trucks.png";
+import {TypeAnimation} from "react-type-animation";
 
 
 const StartSection = () => {
 
     return (
-        <div id={'about'} className={style.container}>
+        <div id={'about'} className={style.wrapper}>
             <div className={style.whole}>
                 <section className={style.title}>
-                    <h1><span>TIR СТО </span><span className={style.letter}>Вантажних автомобiлiв,причiпiв та напiвпричепiв</span></h1>
+                    <h1 >TIR CTO</h1>
+                    <div className={style.wrapperType}>
+                        <TypeAnimation sequence={["Вантажних автомобiлiв",4000,
+                            'Причiпiв',4000,'Напiвпричепiв',3000
+                        ]} wrapper={'span'} speed={50} style={{ display: 'inline-block' }} repeat={Infinity}></TypeAnimation>
+                    </div>
+                    {/*<h1><span>TIR СТО </span><span className={style.letter}>Вантажних автомобiлiв,причiпiв та напiвпричепiв</span></h1>*/}
                     <p>Наша майстерня пропонує <span>індивідуальний підхід</span> до клієнта / <span>Пошук та доставка запасних частин</span></p>
                     <CustomButton  path={'#form'} title={"Отримати послугу"}/>
                 </section>

@@ -1,6 +1,6 @@
 @import "src/main";
 
-.container {
+.wrapper {
   margin-bottom: 150px;
   position: relative;
   width: 100%;
@@ -9,24 +9,21 @@
 
 .whole {
   display: flex;
-  margin-left: 25vh;
+  margin-left: 16vh;
   justify-content: space-between;
   align-items: center;
 
   .title {
-    max-width: 540px;
-    margin-top: 70px;
+    max-width: 50%;
+    //margin-top: 20px;
 
     h1 {
-      color: #333;
+      color: #4762FF;
       font-feature-settings: 'liga' off;
       font-size: 60px;
       font-style: normal;
       font-weight: 700;
       line-height: 76px; /* 126.667% */
-      span {
-        color: #4762FF;
-      }
     }
 
     p {
@@ -45,8 +42,19 @@
       }
 
     }
-  }
+    .wrapperType{
+      span{
+        font-size: 45px;
+        font-style: italic;
+        font-weight: bolder;
+        color: #333;
+      }
 
+    }
+  }
+.image{
+  width: 50%;
+}
 }
 
 .questionWrapper {
@@ -67,12 +75,23 @@
 
   }
 }
+.letter{
+  color: #333 !important;
+}
 @media screen and (max-width: 700px){
+  .wrapper{
+    height: calc(100vh - 116px);
+    margin-bottom: 0;
+  }
 .whole{
   margin-left: 0;
+  height: 100%;
 
   .title{
     margin-top: 0;
+    width: 100%;
+    max-width: 100%;
+    padding: 20px;
 
     h1{
       font-size: 30px;
@@ -90,6 +109,13 @@
     }
   }
 }
+  .wrapperType{
+    //height: 50px;
+    margin-bottom: 100px;
+    span{
+      font-size: 25px !important;
+    }
+  }
   .image{
     display: none;
   }

@@ -4,7 +4,7 @@ import Logo from "./Logo/Logo.tsx";
 import {Dispatch, SetStateAction} from "react";
 
 export interface IHeaderProps{
-    setOpen:Dispatch<SetStateAction<boolean>>
+    setOpen?:Dispatch<SetStateAction<boolean>>
 }
 const Header = ({setOpen}:IHeaderProps) => {
     return (

@@ -1,9 +1,17 @@
 import style from './Burger.module.scss'
-import {useState} from "react";
+import {useEffect, useState} from "react";
 
-const Burger = () => {
+interface IBurgerProps{
+    callback:(arg:boolean) => void
+}
+const Burger = ({callback} :IBurgerProps ) => {
     const [active, setActive] = useState(false)
 
+
+    useEffect(() =>{
+        callback(active)
+
+    },[active])
     return (
         <div className={style.container}>
             <label className={style.burger} htmlFor="burger">
