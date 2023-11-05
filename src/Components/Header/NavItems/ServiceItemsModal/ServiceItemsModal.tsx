@@ -209,7 +209,7 @@ type AdmissionsMenuProps = {
     focusPrevious: () => void;
     onMouseEnter?: (event?: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => void;
     onKeyDown?: (event: React.KeyboardEvent<HTMLAnchorElement>) => void;
-    setOpen:Dispatch<SetStateAction<boolean>>,
+    setOpen:Dispatch<SetStateAction<boolean>> | undefined,
 };
 
 const AdmissionsMenu = React.forwardRef(
@@ -242,6 +242,11 @@ const AdmissionsMenu = React.forwardRef(
             },
         });
 
+        const handleClickItem = () => {
+            if(setOpen){
+                setOpen(true)
+            }
+        }
         const open = Boolean(anchorEl);
         const id = open ? 'admissions-popper' : undefined;
         return (
@@ -294,7 +299,7 @@ const AdmissionsMenu = React.forwardRef(
                         >
                             <ListItem role="none">
                                 <ListItemButton role="menuitem" {...getTargetProps(0)}>
-                                    <ListItemContent> <Link onClick={() => setOpen(true)} to={'/'} target="_blank" rel="noopener noreferrer">Задати
+                                    <ListItemContent> <Link onClick={handleClickItem} to={'/'} target="_blank" rel="noopener noreferrer">Задати
                                         питання</Link></ListItemContent>
 
                                     <Chip size="sm" variant="soft" color="danger">
