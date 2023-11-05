@@ -17,7 +17,7 @@ const Brands = () => {
                 onMouseLeave={() => set({xys: [0, 0, 1]})}
                 style={{transform: props.xys.interpolate(trans), display: 'flex', width: "100%",justifyContent:"space-between"}}>
                 <div className={style.info}>
-                    <h1>С якими брендами мы працюэмо</h1>
+                    <h1>З якими брендами ми працюэмо</h1>
                     <p>Ми працюємо з найпопулярнішими брендами, такими як SCANIA, VOLVO, MAN, RENAULT, DAF <span>та багатьма
                         іншими популярними моделями!</span></p>
                     <p>Ми працюємо з цими брендами щодня!

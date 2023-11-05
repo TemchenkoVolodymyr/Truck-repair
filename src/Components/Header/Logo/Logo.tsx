@@ -6,7 +6,6 @@ const Logo = () => {
     return (
         <NavLink to={'/'} className={style.link}>
         <div className={style.container}>
-            {/*<h2>CТО у<span className={style.letter}> ХОМИ</span></h2>*/}
             <div className={style.logo}>
                 <img src={logo} alt={'logo'}/>
             </div>

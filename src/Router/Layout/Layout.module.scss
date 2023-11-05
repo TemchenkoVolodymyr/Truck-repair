@@ -1,25 +1,35 @@
 @import "/src/main";
 
-.container{
+.container {
   width: 88%;
   margin: 0 auto;
   padding: 5px;
   position: relative;
-  header{
+
+  header {
     background: $headerBgColor;
     height: $headerHeight;
     position: absolute;
     top: 0;
     width: 100%;
   }
+
   main {
     margin-top: 137px;
   }
 
 }
+
 .questionWrapper {
   position: fixed;
   z-index: 2;
   bottom: 0;
   right: 10px;
+}
+
+@media screen and (max-width: 700px) {
+  .questionWrapper{
+    right: 0;
+  }
+
 }

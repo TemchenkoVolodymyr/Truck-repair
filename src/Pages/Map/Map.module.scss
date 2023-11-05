@@ -30,3 +30,33 @@
   width: 10.5rem;
   border-bottom: 2px solid #4762FF; ;
 }
+
+@media screen  and (max-width: 700px){
+.block{
+
+  padding: 0;
+}
+  .title{
+    font-size: 30px;
+  }
+  .titleBlock{
+    padding: 0;
+    h3{
+      b{
+        font-size: 15px;
+      }
+    }
+  }
+  .openingTimes{
+    font-size: 16px;
+  }
+  .mapBlock{
+    padding: 0;
+    width: 100%;
+    iframe{
+      width: 100% !important;
+      padding: 0;
+      margin: 0;
+    }
+  }
+}

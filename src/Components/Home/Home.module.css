@@ -22,4 +22,10 @@
   transform: scale(0.9);
 }
 
+@media screen and (max-width: 700px) {
+  .moveUp {
+    right: 70px !important;
+  }
+}
+
 /*# sourceMappingURL=Home.module.css.map */

@@ -1,0 +1,16 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  position: relative;
+}
+.container nav {
+  display: flex;
+  align-items: center;
+}
+.container nav svg {
+  font-size: 30px;
+}
+
+/*# sourceMappingURL=HeaderMobile.module.css.map */

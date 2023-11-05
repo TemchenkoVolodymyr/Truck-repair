@@ -1,29 +1,26 @@
-.container{
+.container {
   display: flex;
   align-items: center;
   position: relative;
-  h2{
-    font-size: 30px;
-    span{
-      color: #4762FF;
-    }
-  }
-  svg{
-    margin: 0 5px;
-  }
-  .logo{
-    img{
-      //max-width: 250px;
+
+  .logo {
+    img {
+
     }
   }
 
 }
-.letter{
 
-//font-size: 40px !important;
-}
-.link{
+.link {
   color: #1A1A1A !important;
   position: relative;
 
+}
+
+@media screen and (max-width: 700px) {
+  .logo {
+    img {
+      max-width: 150px;
+    }
+  }
 }

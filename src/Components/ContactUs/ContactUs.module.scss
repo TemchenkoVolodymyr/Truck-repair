@@ -38,3 +38,26 @@
   }
 
 }
+@media screen and (max-width: 700px){
+  .container{
+  }
+.form{
+  position: relative !important;
+  top:0;
+  right: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 0.84) !important;
+  //width: 100%;
+  padding: 0;
+  width: 100% !important;
+  height:auto !important;
+  h1{
+    font-size: 30px !important;
+  }
+  p{
+    font-size: 16px !important;
+  }
+
+
+}
+}

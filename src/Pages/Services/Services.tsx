@@ -19,7 +19,7 @@ function Services () {
                             })}
                         </div>
                         <Link to={'/services'} className={style.btn}>
-                            Переглянути всі послуги
+                            <p>Переглянути всі послуги</p>
                             <BsArrowRightShort size={'40px'}/>
                         </Link>
                     </div>

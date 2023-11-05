@@ -67,3 +67,30 @@
 
   }
 }
+@media screen and (max-width: 700px){
+.whole{
+  margin-left: 0;
+
+  .title{
+    margin-top: 0;
+
+    h1{
+      font-size: 30px;
+      letter-spacing: normal !important;
+      line-height: normal;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      .letter{
+        font-size: 20px;
+        color: #333131;
+        max-width: 300px;
+        font-weight: lighter;
+      }
+    }
+  }
+}
+  .image{
+    display: none;
+  }
+}

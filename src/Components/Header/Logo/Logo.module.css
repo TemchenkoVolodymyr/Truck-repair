@@ -3,18 +3,15 @@
   align-items: center;
   position: relative;
 }
-.container h2 {
-  font-size: 30px;
-}
-.container h2 span {
-  color: #4762FF;
-}
-.container svg {
-  margin: 0 5px;
-}
 .link {
   color: #1A1A1A !important;
   position: relative;
+}
+
+@media screen and (max-width: 700px) {
+  .logo img {
+    max-width: 150px;
+  }
 }
 
 /*# sourceMappingURL=Logo.module.css.map */

@@ -13,6 +13,7 @@
   font-weight: 700;
   margin-bottom: 10px;
 }
+
 .subtitle {
   color: $greyColor;
   text-align: center;
@@ -21,6 +22,7 @@
   font-size: 18px;
   font-weight: 400;
 }
+
 .block {
   position: relative;
   height: 450px;
@@ -48,9 +50,48 @@
   color: white;
   border-radius: 10px;
   border: none;
-  background-color:#4762FF;
+  background-color: #4762FF;
+
   &:hover {
     transform: scale(1.1);
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .whole{
+    margin: 0;
+  }
+  .btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    width: 100%;
+    gap:0;
+    margin: 15px 0;
+    padding: 10px;
+    bottom: 0;
+    right: 0;
+    p{
+      width: 100%;
+    }
+  }
+  .wrapperBlock {
+    display: flex;
+    flex-direction: column;
+
+  }
+  .title {
+    font-size: 30px;
+  }
+  .items {
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+  .block {
+    height: 100%;
+    border: none;
   }
 }
 
