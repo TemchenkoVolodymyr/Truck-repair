@@ -6,9 +6,15 @@ interface IBurgerProps{
 }
 const Burger = ({callback} :IBurgerProps ) => {
     const [active, setActive] = useState(false)
-
+    const body = document.body;
 
     useEffect(() =>{
+
+        if (body.style.overflow !== "hidden") {
+            body.style.overflow = "hidden";
+        } else {
+            body.style.overflow = "auto";
+        }
         callback(active)
 
     },[active])

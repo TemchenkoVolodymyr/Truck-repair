@@ -5,6 +5,7 @@ import {Menu} from 'antd';
 import {getServices} from "../../../Requests/GetServices.ts";
 import {IServices} from "../../Header/NavItems/ServiceItemsModal/ServiceItemsModal.tsx";
 import {Link} from "react-scroll";
+import {NavLink} from "react-router-dom";
 
 
 type MenuItem = Required<MenuProps>['items'][number];
@@ -38,21 +39,22 @@ const BurgerItems: React.FC = () => {
         })
     }, [])
     const onClick: MenuProps['onClick'] = e => {
-        console.log('click ', e);
+        // console.log('click ', e);
     };
 
     const items: MenuProps['items'] = [
-        getItem(<Link to={'/'}>Головна</Link>, 'sub1', []),
+        getItem(<Link style={{color:'white'}} to={'/'}>Головна</Link>, 'sub1', []),
 
-        getItem(<Link style={{color: 'white'}} to={'services'}>Послуги</Link>, 'sub2', <AppstoreOutlined/>,
+        getItem(<NavLink style={{color: 'white'}} to={'services'}>Послуги</NavLink>, 'sub2', <AppstoreOutlined/>,
 
-            serviceItems.map((item: IServices, index: number) => getItem(item.service.title, index, undefined, undefined, undefined, 'services'))
+            serviceItems.map((item: IServices, index: number) => getItem(<NavLink to={'services'}>{item.service.title}</NavLink>, index, undefined, undefined, undefined, 'services'))
         ),
         getItem('Контакти', 'sub4', <SettingOutlined/>, [
-            {label: "+38 067 1350458", key: 2},
-            {label: "м. Черкаси, вул. Гетьмана Сагайдачного, 84/1", key: 2},
+            {label: <a href="tel:++380671350458">+38 067 1350458</a>
+            , key: 2},
+            {label: <Link style={{color:'white'}} to={'map'}>м. Черкаси, вул. Гетьмана Сагайдачного, 84/1</Link>, key: 3},
         ]),
-        getItem(<Link to={'map'}>Як нас знайти</Link>, 'sub3')]
+        getItem(<Link style={{color:'white'}} to={'map'}>Як нас знайти</Link>, 'sub4')]
     return (
         <Menu
             onClick={onClick}
