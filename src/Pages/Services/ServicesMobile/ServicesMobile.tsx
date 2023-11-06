@@ -6,6 +6,7 @@ import engine from '../../../assets/engine.jpeg'
 import move from '../../../assets/move.jpeg'
 import sceplenie from '../../../assets/sceplenie.jpeg'
 import arrow from '../../../assets/arrow.png'
+import {NavLink} from "react-router-dom";
 
 const ServicesMobile = () => {
 
@@ -29,7 +30,7 @@ const ServicesMobile = () => {
             <div className={style.more}>
                 {/*<CustomButton title={'Бiльше посгул'}></CustomButton>*/}
                 <img alt={'arrow'} src={arrow}/>
-                <button>Бiльше посгул</button>
+                <NavLink to={'services'}>Бiльше послуг</NavLink>
             </div>
 
         </section>

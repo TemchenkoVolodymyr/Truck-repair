@@ -34,14 +34,19 @@
 @media screen  and (max-width: 700px){
 .block{
 
-  padding: 0 15px;
+  padding:0;
 }
   .title{
     font-size: 30px;
   }
   .titleBlock{
     padding: 0;
+    margin: 5px;
+    h2{
+      font-size: 25px;
+    }
     h3{
+      font-size: 25px;
       b{
         font-size: 15px;
       }
