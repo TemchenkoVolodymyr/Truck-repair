@@ -85,7 +85,7 @@
   }
 .whole{
   margin-left: 0;
-  height: 100%;
+  height: calc(100% - 139px);
 
   .title{
     margin-top: 0;
@@ -111,7 +111,7 @@
 }
   .wrapperType{
     //height: 50px;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
     span{
       font-size: 25px !important;
     }

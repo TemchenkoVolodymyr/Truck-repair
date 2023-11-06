@@ -1,5 +1,5 @@
 
-import itemOne from '../../../assets/slider/ДП.png'
+import itemOne from '../../../assets/slider/DP.png'
 import itemTwo from '../../../assets/slider/env.png'
 import itemThree from '../../../assets/slider/down.png'
 import itemFour from '../../../assets/slider/under.png'

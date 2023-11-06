@@ -10,10 +10,11 @@ import ContactUs from "../ContactUs/ContactUs.tsx";
 import {AiOutlineArrowUp} from "react-icons/ai";
 import {useEffect, useState} from "react";
 import {Link} from "react-scroll";
+import ServicesMobile from "../../Pages/Services/ServicesMobile/ServicesMobile.tsx";
 
 const Home = () => {
     const [showScrollUp,setShowScrollUp] = useState<boolean>(false)
-
+    const [widnowWidth, setWindowWidth] = useState(window.innerWidth)
     useEffect(() => {
         window.addEventListener('scroll',handleScroll);
     },[window.pageYOffset])
@@ -27,11 +28,20 @@ const Home = () => {
     };
 
 
+    useEffect(() => {
+        function handleResize() {
+            setWindowWidth(window.innerWidth);
+        }
+
+        window.addEventListener('resize', handleResize);
+
+        return () => window.removeEventListener('resize', handleResize);
+    }, [])
 
     return (
         <article className={style.container}>
             <StartSection></StartSection>
-            <Services/>
+            {widnowWidth > 700 ? <Services/> : <ServicesMobile></ServicesMobile> }
             <Brands></Brands>
             <Slider></Slider>
             <Map/>

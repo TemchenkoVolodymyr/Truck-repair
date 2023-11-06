@@ -1,0 +1,39 @@
+.wrapper {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+  //padding: 5px;
+
+}
+
+.more {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  button {
+    border:none;
+    padding: 5px 25px;
+    background: transparent;
+    border-bottom: 1px solid black;
+
+  }
+  img{
+    max-width: 50px;
+    rotate: 90deg;
+  }
+}
+.title{
+  color: #333;
+  margin-left: 10px;
+  //width: 540px;
+  font-feature-settings: "liga" off;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 16px;
+}
+.container{
+  margin-bottom: 50px;
+}
