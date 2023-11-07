@@ -35,7 +35,7 @@ const Brands = () => {
                     justifyContent: "space-between"
                 }}>
                 <div className={style.info}>
-                    <h1>З якими брендами ми працюэмо</h1>
+                    <h1>З якими брендами ми працюємо</h1>
                     <p>Ми працюємо з найпопулярнішими брендами, такими як SCANIA, VOLVO, MAN, RENAULT, DAF <span>та багатьма
                         іншими моделями!</span></p>
                     {/*<p>Ми працюємо з цими брендами щодня!*/}

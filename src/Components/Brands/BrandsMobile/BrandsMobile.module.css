@@ -1,0 +1,33 @@
+.container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  border-top: 1px solid dodgerblue;
+  border-bottom: 1px solid dodgerblue;
+  position: relative;
+  justify-content: space-between;
+}
+.container .imageWrapper {
+  width: 50%;
+  border-bottom: 1px solid dodgerblue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+}
+.container .imageWrapper img {
+  width: 80%;
+  height: auto;
+  object-fit: cover;
+}
+
+.line {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 2px;
+  height: 100%;
+  background-color: rgba(30, 144, 255, 0.51);
+}
+
+/*# sourceMappingURL=BrandsMobile.module.css.map */

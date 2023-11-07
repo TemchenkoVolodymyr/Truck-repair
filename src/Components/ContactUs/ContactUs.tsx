@@ -5,9 +5,9 @@ const ContactUs = () => {
     return (
         <section id={'form'} className={style.container} style={{background:`url(${bg})`}}>
             <div className={style.form}>
-                <h1>Запишись до нас</h1>
-                <p>Ми передзвонимо протягом
-                    одого робочого дня</p>
+                <h1>Забронювати вiзит в майстерню</h1>
+                <p>Ми передзвонимо вам протягом
+                    однієї години </p>
                 <Form></Form>
             </div>
 

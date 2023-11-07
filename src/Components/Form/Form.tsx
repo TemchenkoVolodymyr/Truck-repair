@@ -62,7 +62,7 @@ const Form = () => {
                     <button className={style.wrapperBtn}>
                         <Stack direction="row" spacing={2}>
                             <LoadingButton style={{color:'#4762FF',border:'1px solid #4762FF'}}  loading={isLoad}  variant="outlined">
-                                Записатись
+                                Забронювати
                             </LoadingButton>
                         </Stack>
                     </button>

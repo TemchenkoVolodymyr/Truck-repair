@@ -16,7 +16,7 @@ import style from './ServiceItemsModal.module.scss'
 import Items from "../Items/Items.tsx";
 import {Dispatch, SetStateAction, useEffect} from "react";
 import {getServices} from '../../../../Requests/GetServices.ts'
-import {NavLink} from 'react-router-dom'
+import {NavLink, useNavigate} from 'react-router-dom'
 import {RiWhatsappFill} from "react-icons/ri";
 import {BsTelegram} from "react-icons/bs";
 import {FaMapMarked} from "react-icons/fa";
@@ -218,6 +218,7 @@ const AdmissionsMenu = React.forwardRef(
         ref: React.ForwardedRef<HTMLAnchorElement>,
     ) => {
         const [anchorEl, setAnchorEl] = React.useState<HTMLAnchorElement | null>(null);
+        const navigate = useNavigate()
         const {targets, setActiveIndex, getTargetProps} = useRovingIndex({
             initialActiveIndex: null,
             vertical: true,
@@ -249,6 +250,22 @@ const AdmissionsMenu = React.forwardRef(
         }
         const open = Boolean(anchorEl);
         const id = open ? 'admissions-popper' : undefined;
+
+        const mapNavigation = () => {
+            navigate('/')
+
+            setTimeout(() => {
+                const element = document.getElementById('map');
+                if(element){
+
+                    window.scrollTo({
+                        top: element?.offsetTop,
+                        behavior: 'smooth'
+                    })
+                }
+
+            }, 300)
+        }
         return (
             <ClickAwayListener onClickAway={() => setAnchorEl(null)}>
                 <div onMouseLeave={() => setAnchorEl(null)}>
@@ -278,7 +295,7 @@ const AdmissionsMenu = React.forwardRef(
                             ...(open && theme.variants.plainHover.neutral),
                         })}
                     >
-                        <Link to={'contacts'} target="_blank" rel="noopener noreferrer">Контакти</Link>
+                        <Link onClick={mapNavigation} to={'#'} target="_blank" rel="noopener noreferrer">Контакти</Link>
                         <KeyboardArrowDown/>
                     </ListItemButton>
                     <Popper id={id} open={open} anchorEl={anchorEl} disablePortal keepMounted>
@@ -330,7 +347,7 @@ const AdmissionsMenu = React.forwardRef(
                                 }
                             >
                                 <ListItemButton role="menuitem" {...getTargetProps(2)}>
-                                    <Link to={'map'} target="_blank" rel="noopener noreferrer"> Де ми знаходимся?</Link>
+                                    <Link onClick={mapNavigation} to={'#'} target="_blank" rel="noopener noreferrer"> Де ми знаходимся?</Link>
                                 </ListItemButton>
                             </ListItem>
                         </List>

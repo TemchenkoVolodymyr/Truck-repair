@@ -95,4 +95,10 @@
   background-color: transparent;
 }
 
+@media screen and (max-width: 700px) {
+  .icon {
+    max-width: 80px !important;
+  }
+}
+
 /*# sourceMappingURL=ChatQuestion.module.css.map */

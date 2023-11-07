@@ -28,7 +28,6 @@ const ServicesMobile = () => {
                 {items.map((item,index) => <ServiceMobileItem key={index} icon={item.icon} title={item.title} image={item.image}></ServiceMobileItem>)}
             </div>
             <div className={style.more}>
-                {/*<CustomButton title={'Бiльше посгул'}></CustomButton>*/}
                 <img alt={'arrow'} src={arrow}/>
                 <NavLink to={'services'}>Бiльше послуг</NavLink>
             </div>

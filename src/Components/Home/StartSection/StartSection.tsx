@@ -16,9 +16,8 @@ const StartSection = () => {
                             'Причiпiв',4000,'Напiвпричепiв',3000
                         ]} wrapper={'span'} speed={50} style={{ display: 'inline-block' }} repeat={Infinity}></TypeAnimation>
                     </div>
-                    {/*<h1><span>TIR СТО </span><span className={style.letter}>Вантажних автомобiлiв,причiпiв та напiвпричепiв</span></h1>*/}
                     <p>Наша майстерня пропонує <span>індивідуальний підхід</span> до клієнта / <span>Пошук та доставка запасних частин</span></p>
-                    <CustomButton  path={'#form'} title={"Отримати послугу"}/>
+                    <CustomButton  path={'#form'} title={"Забронювати вiзит"}/>
                 </section>
                 <section className={style.image}>
                     <img src={trucks} alt={'truck'}/>

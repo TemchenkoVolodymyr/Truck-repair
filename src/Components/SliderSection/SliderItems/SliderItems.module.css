@@ -30,6 +30,7 @@
   border-radius: 5px;
   height: 500px;
   object-fit: cover;
+  filter: sepia(0.3) hue-rotate(50deg);
 }
 
 /*# sourceMappingURL=SliderItems.module.css.map */

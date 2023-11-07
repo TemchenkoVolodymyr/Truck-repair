@@ -20,7 +20,7 @@ function Map() {
                 <div className={style.titleBlock}>
                     <h2 className={style.title}>Де ми знаходимося?</h2>
                     <h3>
-                        <b>вул. Гетьмана Сагайдачного, 84/1, <br />Черкаси, Черкаська область, Украина.</b>
+                        <b>вул. Гетьмана Сагайдачного, 84/1, <br />Черкаси, Черкаська область, Україна.</b>
                     </h3>
                     <div className={style.openingTimes}>
                         {daysOfWeek.map((dayOfWeek: string, index: number) => (
