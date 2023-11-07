@@ -5,30 +5,16 @@ import man from '../../../assets/man.svg'
 import renault from '../../../assets/renault.png'
 import volvo from '../../../assets/volvo.png'
 import kamaz from '../../../assets/KAMAZ-Logo-PNG_004.png'
+import BrandItem from "./BrandItem/BrandItem.tsx";
 
 
 const BrandsMobile = () => {
+
+    const brands = [scania,man,daf,renault,volvo,kamaz]
     return (
         <>
         <div className={style.container}>
-            <div className={style.imageWrapper}>
-                <img src={scania} alt={'brand'}/>
-            </div>
-            <div className={style.imageWrapper}>
-                <img src={man} alt={'brand'}/>
-            </div>
-            <div className={style.imageWrapper}>
-                <img src={daf} alt={'brand'}/>
-            </div>
-            <div className={style.imageWrapper}>
-                <img src={renault} alt={'brand'}/>
-            </div>
-            <div className={style.imageWrapper}>
-                <img src={volvo} alt={'brand'}/>
-            </div>
-            <div className={style.imageWrapper}>
-                <img src={kamaz} alt={'brand'}/>
-            </div>
+            {brands.map((brand,index) => <BrandItem key={index} image={brand}></BrandItem>)}
             <div className={style.line}></div >
         </div>
 

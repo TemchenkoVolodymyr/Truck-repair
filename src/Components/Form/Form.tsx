@@ -54,7 +54,7 @@ const Form = () => {
                           required={true}
                           onChange={formik.handleChange}
                           value={formik.values.description}
-                          placeholder={'Опишить вашу проблему'}
+                          placeholder={'Опишiть вашу проблему'}
                 />
                 </div>
 

@@ -5,7 +5,6 @@ import Slider from "../SliderSection/SliderSection.tsx";
 import Services from "../../Pages/Services/Services.tsx";
 import Map from "../../Pages/Map/Map.tsx";
 import Footer from "../../Pages/Footer/Footer.tsx";
-
 import ContactUs from "../ContactUs/ContactUs.tsx";
 import {AiOutlineArrowUp} from "react-icons/ai";
 import {useEffect, useState} from "react";
