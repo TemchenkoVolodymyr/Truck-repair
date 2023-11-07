@@ -7,7 +7,7 @@ import move from '../../../assets/move.jpeg'
 import sceplenie from '../../../assets/sceplenie.jpeg'
 import arrow from '../../../assets/arrow.png'
 import {NavLink} from "react-router-dom";
-
+import truck from '../../../assets/truck.png'
 const ServicesMobile = () => {
 
     const items = [{
@@ -23,7 +23,10 @@ const ServicesMobile = () => {
     }]
     return (
         <section id={'services'} className={style.container}>
-            <h1 className={style.title}>Послуги для вантажних автомобiлiв</h1>
+            {/*<h1 className={style.title}>Послуги для вантажних автомобiлiв</h1>*/}
+            <div className={style.titleWrapper}>  <h1 className={style.title}>Послуги</h1>
+                <img src={truck} alt={'truck'}/></div>
+
             <div className={style.wrapper}>
                 {items.map((item,index) => <ServiceMobileItem key={index} icon={item.icon} title={item.title} image={item.image}></ServiceMobileItem>)}
             </div>

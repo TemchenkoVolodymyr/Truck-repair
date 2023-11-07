@@ -2,14 +2,13 @@
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  border-top: 1px solid dodgerblue;
-  border-bottom: 1px solid dodgerblue;
+  border-top: 2px solid rgba(44, 45, 45, 0.41);
   position: relative;
   justify-content: space-between;
 }
 .container .imageWrapper {
   width: 50%;
-  border-bottom: 1px solid dodgerblue;
+  border-bottom: 2px solid rgba(44, 45, 45, 0.41);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -27,7 +26,7 @@
   left: 50%;
   width: 2px;
   height: 100%;
-  background-color: rgba(30, 144, 255, 0.51);
+  background-color: rgba(44, 45, 45, 0.41);
 }
 
 /*# sourceMappingURL=BrandsMobile.module.css.map */

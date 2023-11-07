@@ -29,15 +29,7 @@ const BrandsMobile = () => {
             <div className={style.imageWrapper}>
                 <img src={kamaz} alt={'brand'}/>
             </div>
-            {/*<img src={scania} alt={'brand'}/>*/}
-            {/*<img src={man} alt={'brand'}/>*/}
-            {/*<img src={daf} alt={'brand'}/>*/}
-            {/*<img src={renault} alt={'brand'}/>*/}
-            {/*<img src={volvo} alt={'brand'}/>*/}
-            {/*<img src={volvo} alt={'brand'}/>*/}
-            <div className={style.line} >
-
-            </div >
+            <div className={style.line}></div >
         </div>
 
         </>

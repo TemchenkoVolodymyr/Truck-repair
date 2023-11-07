@@ -18,7 +18,7 @@ const ChatQuestion = ({open,setOpen}:IChatQuestionProps) => {
     const formik = useFormik({
         initialValues: {
             question: "",
-            phone: '+',
+            phone: '',
         },
         onSubmit: async (values) => {
             console.log('s')
