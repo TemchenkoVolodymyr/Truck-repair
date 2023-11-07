@@ -10,7 +10,7 @@ const Burger = ({callback} :IBurgerProps ) => {
 
     useEffect(() =>{
 
-        if (body.style.overflow !== "hidden") {
+        if (active) {
             body.style.overflow = "hidden";
         } else {
             body.style.overflow = "auto";

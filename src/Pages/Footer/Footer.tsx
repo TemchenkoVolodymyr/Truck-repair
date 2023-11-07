@@ -5,7 +5,7 @@ import Logo from "../../Components/Header/Logo/Logo.tsx";
 const homeList: IFooter[] = [
     {
         text: 'Майстерня',
-        href: '#about'
+        href: '#place'
     },
     {
         text: 'З чим працюємо?',
@@ -21,7 +21,7 @@ const homeList: IFooter[] = [
     },
 ]
 const contactsList : IFooter[] = [
-    {text : '+38 067 1350458' , href : '#'},
+    {text : '+38 067-135-04-58' , href : 'tel:+380671350458'},
 ]
 
 function Footer() {

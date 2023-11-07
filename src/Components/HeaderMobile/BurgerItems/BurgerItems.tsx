@@ -5,7 +5,7 @@ import {Menu} from 'antd';
 import {getServices} from "../../../Requests/GetServices.ts";
 import {IServices} from "../../Header/NavItems/ServiceItemsModal/ServiceItemsModal.tsx";
 import {Link} from "react-scroll";
-import {NavLink} from "react-router-dom";
+import {NavLink, useNavigate} from "react-router-dom";
 
 
 type MenuItem = Required<MenuProps>['items'][number];
@@ -32,6 +32,7 @@ function getItem(
 const BurgerItems: React.FC = () => {
 
     const [serviceItems, setServiceItems] = useState([])
+    const navigate = useNavigate()
 
     useEffect(() => {
         getServices().then(res => {
@@ -39,26 +40,46 @@ const BurgerItems: React.FC = () => {
         })
     }, [])
     const onClick: MenuProps['onClick'] = e => {
-        // console.log('click ', e);
+        console.log('click ', e);
     };
+    const mapNavigation = () => {
+        navigate('/')
 
+        setTimeout(() => {
+            const element = document.getElementById('map');
+            if(element){
+                console.log(element)
+                window.scrollTo({
+                    top: element?.offsetTop,
+                    behavior: 'smooth'
+                })
+            }
+
+        }, 300)
+    }
     const items: MenuProps['items'] = [
-        getItem(<Link style={{color:'white'}} to={'/'}>Головна</Link>, 'sub1', []),
+        getItem(<NavLink to={'/'}>Головна</NavLink>, 'sub1', []),
 
         getItem(<NavLink style={{color: 'white'}} to={'services'}>Послуги</NavLink>, 'sub2', <AppstoreOutlined/>,
 
-            serviceItems.map((item: IServices, index: number) => getItem(<NavLink to={'services'}>{item.service.title}</NavLink>, index, undefined, undefined, undefined, 'services'))
+            serviceItems.map((item: IServices, index: number) => getItem(<NavLink
+                to={'services'}>{item.service.title}</NavLink>, index, undefined, undefined, undefined, 'services'))
         ),
         getItem('Контакти', 'sub4', <SettingOutlined/>, [
-            {label: <a href="tel:++380671350458">+38 067 1350458</a>
-            , key: 2},
-            {label: <Link style={{color:'white'}} to={'map'}>м. Черкаси, вул. Гетьмана Сагайдачного, 84/1</Link>, key: 3},
+            {
+                label: <a href="tel:+380671350458">+38 067 1350458</a>
+                , key: 2
+            },
+            {
+                label: <Link onClick={mapNavigation} style={{color: 'white'}} to={'#'}>м. Черкаси, вул. Гетьмана Сагайдачного, 84/1</Link>,
+                key: 3
+            },
         ]),
-        getItem(<Link style={{color:'white'}} to={'map'}>Як нас знайти</Link>, 'sub4')]
+        getItem(<Link onClick={mapNavigation} style={{color: 'white'}} to={'#'}>Як нас знайти</Link>, 'sub8')]
     return (
         <Menu
             onClick={onClick}
-            style={{width: "100%",background:"black",color:'white',overflow:'auto',marginTop:'50px'}}
+            style={{width: "100%", background: "black", color: 'white', overflow: 'auto', marginTop: '80px'}}
             defaultSelectedKeys={['1']}
             defaultOpenKeys={['sub1']}
             mode="inline"

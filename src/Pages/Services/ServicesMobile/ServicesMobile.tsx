@@ -22,7 +22,7 @@ const ServicesMobile = () => {
         image: move, title: 'Ремонт ходової частини', icon: <ImAppleinc></ImAppleinc>
     }]
     return (
-        <section className={style.container}>
+        <section id={'services'} className={style.container}>
             <h1 className={style.title}>Послуги для вантажних автомобiлiв</h1>
             <div className={style.wrapper}>
                 {items.map((item,index) => <ServiceMobileItem key={index} icon={item.icon} title={item.title} image={item.image}></ServiceMobileItem>)}
