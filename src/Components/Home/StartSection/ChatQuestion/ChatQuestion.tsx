@@ -1,6 +1,6 @@
 import question from '../../../../assets/question.png'
 import style from './ChatQuestion.module.scss'
-import {useState} from "react";
+import React, { useEffect, useRef, useState} from "react";
 import {GoDotFill} from "react-icons/go";
 import {submitForm} from "../../../../Requests/SumbitForm.ts";
 import LoadingButton from "@mui/lab/LoadingButton";
@@ -8,13 +8,15 @@ import {useFormik} from "formik";
 import {Stack} from "@mui/material";
 
 export interface IChatQuestionProps {
-    open:boolean,
-    setOpen:(arg:boolean) => void
+    open: boolean,
+    setOpen: (arg: boolean) => void
 }
-const ChatQuestion = ({open,setOpen}:IChatQuestionProps) => {
+
+const ChatQuestion = ({open, setOpen}: IChatQuestionProps) => {
 
     const [isLoad, setIsLoad] = useState<boolean>(false)
 
+    const refBtn = useRef(null)
     const formik = useFormik({
         initialValues: {
             question: "",
@@ -29,10 +31,27 @@ const ChatQuestion = ({open,setOpen}:IChatQuestionProps) => {
         }
     });
 
+
+    function useOutsideClick(ref :React.MutableRefObject<any>, callback:() => void) {
+        const handleClick = e => {
+            if (ref.current && !ref.current.contains(e.target)) {
+                callback();
+            }
+        };
+
+        useEffect(() => {
+            document.addEventListener('mousedown', handleClick);
+
+            return () => {
+                document.removeEventListener('mousedown', handleClick);
+            };
+        });
+    }
+    useOutsideClick(refBtn, () => setOpen(false));
     return (
         <>
-            <div className={style.container}>
-                {open ? <section className={style.modal}>
+            <div className={style.container} ref={refBtn} tabIndex={-1}>
+                {open ? <section className={style.modal} >
                     <header>
                         <h3>Технічний спеціаліст <GoDotFill color={'green'}></GoDotFill></h3>
                     </header>
@@ -47,13 +66,14 @@ const ChatQuestion = ({open,setOpen}:IChatQuestionProps) => {
                                   onChange={formik.handleChange}
                                   required={true}
                         />
-                            <input id={'phone'} type={'tel'} placeholder={"+38"} value={formik.values.phone}
-                                   onChange={formik.handleChange}
-                                   required={true}
-                            />
+                        <input id={'phone'} type={'tel'} placeholder={"+38"} value={formik.values.phone}
+                               onChange={formik.handleChange}
+                               required={true}
+                        />
                         <button className={style.wrapperButton}>
                             <Stack direction="row" spacing={2}>
-                                <LoadingButton style={{color:'#4762FF',border:'1px solid #4762FF'}} loading={isLoad} variant="outlined">
+                                <LoadingButton style={{color: '#4762FF', border: '1px solid #4762FF'}} loading={isLoad}
+                                               variant="outlined">
                                     Запитати
                                 </LoadingButton>
                             </Stack>
@@ -62,8 +82,8 @@ const ChatQuestion = ({open,setOpen}:IChatQuestionProps) => {
 
 
                 </section> : null}
-
-                <div className={style.wrapperIcon} onClick={() => setOpen(!open)}>
+                {/*onClick={() => setOpen(!open)}*/}
+                <div className={style.wrapperIcon} onMouseDown={(e) => {e.preventDefault(); setOpen(!open)}} >
                     <img className={style.icon} alt={'icon'} src={question}/>
                 </div>
 
