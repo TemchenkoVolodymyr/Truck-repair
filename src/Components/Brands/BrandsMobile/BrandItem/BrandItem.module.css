@@ -1,3 +1,15 @@
-
+.wrapper {
+  width: 50%;
+  border-bottom: 2px solid rgba(44, 45, 45, 0.41);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+}
+.wrapper img {
+  width: 80%;
+  height: auto;
+  object-fit: cover;
+}
 
 /*# sourceMappingURL=BrandItem.module.css.map */

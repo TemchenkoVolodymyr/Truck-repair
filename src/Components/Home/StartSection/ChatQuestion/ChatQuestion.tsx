@@ -32,9 +32,9 @@ const ChatQuestion = ({open, setOpen}: IChatQuestionProps) => {
     });
 
 
-    function useOutsideClick(ref :React.MutableRefObject<any>, callback:() => void) {
-        const handleClick = e => {
-            if (ref.current && !ref.current.contains(e.target)) {
+    function useOutsideClick(ref :React.MutableRefObject<HTMLElement | null>, callback:() => void) {
+        const handleClick = (e:MouseEvent) => {
+            if (ref.current && !ref.current.contains(e.target as Node)) {
                 callback();
             }
         };

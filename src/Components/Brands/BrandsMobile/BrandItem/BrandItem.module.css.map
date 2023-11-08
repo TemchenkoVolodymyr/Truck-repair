@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":[],"names":[],"mappings":"","file":"BrandItem.module.css"}
+{"version":3,"sourceRoot":"","sources":["BrandItem.module.scss"],"names":[],"mappings":"AAAA;EACE;EACA;EAEA;EACA;EACA;EACA;;AACA;EAEE;EACA;EACA","file":"BrandItem.module.css"}
